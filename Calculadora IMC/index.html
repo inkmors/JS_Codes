@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/icons8-calculadora-50.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="div-align-all">
+            <h1>Verifique seu IMC</h1>
+    
+            <div class="align-top">
+                <div class="div-align-inpts">
+                    <span>Altura:</span>
+                    <input id="inpt-height" placeholder="Insira sua altura em centimetros" type="number">
+                </div>
+    
+                <div class="align-error">
+                    <div class="div-align-inpts">
+                        <span>Peso:</span>
+                        <input id="inpt-weight" placeholder="Insira seu peso" type="number">
+                    </div>
+                    <span id="span-error"></span>
+                </div>
+            </div>
+    
+            <div class="align-sub">
+                <div class="div-align-btn">
+                    <button id="btn-calculator">Calcular</button>
+                    <button id="btn-reset">Resetar</button>
+                </div>
+    
+                <div class="div-align-results">
+                    <div class="subdiv-align-results">
+                        <span>IMC</span>
+                        <div class="div-result">
+                            <span id="span-imc">-----</span>
+                        </div>
+                    </div>
+    
+                    <div class="subdiv-align-results">
+                        <span>Categoria</span>
+                        <div class="div-result">
+                            <span id="span-category">-----</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p>By: Morusu Developer</p>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

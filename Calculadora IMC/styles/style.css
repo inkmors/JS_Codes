@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+@font-face {
+    font-family: Jetbrains;
+    src: url(assets/JetBrainsMono-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Jetbrains mono;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(131, 58, 180, 0.404);
+    background: linear-gradient(180deg, rgb(10, 22, 10) 40%, rgb(10, 10, 10) 100%);
+    background-repeat: no-repeat;
+    gap: 2rem;
+}
+
+body p {
+    color: rgb(20, 204, 60);
+}
+
+main {
+    background: rgba(131, 58, 180, 0.404);
+    background: linear-gradient(180deg, rgb(25, 25, 26) 40%, rgb(13, 14, 22) 100%);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 40rem;
+    padding: 3em 3em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-sizing: border-box;
+}
+
+.div-align-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.align-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.align-sub{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.div-align-all h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(20, 204, 60);
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 500;
+}
+
+.align-error{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.align-error span {
+    color: red;
+}
+
+.div-align-inpts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.div-align-inpts span {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: rgb(20, 204, 60);
+    padding-left: 0.5rem;
+}
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 7px;
+    padding-left: 0.5rem;
+    border: none;
+    outline-color: red;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.div-result {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    border-radius: 7px;
+    color: black;
+}
+
+.div-align-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.div-align-btn button:nth-child(1) {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(20, 204, 60);
+    box-shadow: rgba(20, 204, 60, 0.781) 0px 0px 15px;
+}
+
+.div-align-btn button:nth-child(2) {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(221, 0, 0);
+    box-shadow: rgba(255, 0, 0, 0.815) 0px 0px 15px;
+}
+
+
+.div-align-btn button:nth-child(1):hover {
+    background-color: rgb(15, 82, 29);
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.div-align-btn button:nth-child(2):hover {
+    background-color: rgb(156, 14, 14);
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.div-align-results {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    font-size: 20px;
+    color: rgb(20, 204, 60);
+    flex-wrap: wrap;
+}
+
+#span-category, #span-imc {
+    font-size: 17px;
+}
+
+.subdiv-align-results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    input, .div-result, .div-align-btn button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .div-align-btn {
+        flex-wrap: wrap;
+        max-width: 25rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-align-all h1 {
+        font-size: 30px;
+    }
+
+    input, .div-result, .div-align-btn button {
+        font-size: 0.8rem;
+    }
+
+    .div-align-btn {
+        gap: 0.5rem;
+    }
+}
